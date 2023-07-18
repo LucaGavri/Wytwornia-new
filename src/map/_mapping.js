@@ -1,25 +1,8 @@
 import React from "react";
-import GoogleMapReact from 'google-map-react';
-
 
 export default function SimpleMap(){
-  const defaultProps = {
-    center: {
-      lat: 52.0548047,
-      lng: 21.3841915
-    },
-    zoom: 18
-  };
 
-  return (
-    // Important! Always set the container height explicitly
-    <div style={{ height: '400px', width: '100%' }}>
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-      >
-      </GoogleMapReact>
-    </div>
+  return(
+    <div><iframe title="Wytwórnia" width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=wytwornia%20blasku&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
   );
-}
+  }

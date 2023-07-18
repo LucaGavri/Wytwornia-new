@@ -13,7 +13,6 @@ class Contact extends Component {
                     <div className="contactTxt">
                         <h3>Zapraszamy do kontaktu</h3>
                         <div className="contactMap">
-                            {/* <MapContainer/> */}
                             <SimpleMap/>
                         </div>
                     </div>
